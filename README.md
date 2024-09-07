@@ -1,9 +1,9 @@
-# Elysia with Bun runtime
+# Elysia with Bun runtime + HTMX
 
 ## Getting Started
 To get started with this template, simply paste this command into your terminal:
 ```bash
-bun create elysia ./elysia-example
+bun install
 ```
 
 ## Development
