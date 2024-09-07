@@ -1,15 +1,21 @@
 {
-  "name": "Cafe",
+  "name": "cafe",
   "version": "1.0.50",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "dev": "bun run --watch src/app.tsx",
+    "build": "bun run src/app.tsx",
+    "build-css": "bunx tailwindcss -i ./src/index.css -o ./public/styles.css"
   },
   "dependencies": {
+    "@elysiajs/html": "^1.1.1",
+    "@elysiajs/static": "^1.1.1",
     "elysia": "latest"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "bun-types": "latest",
+    "tailwindcss": "^3.4.10",
+    "typed-html": "^3.0.1"
   },
   "module": "src/index.js"
 }
